@@ -25,3 +25,4 @@ steps:
     WebAppName: 'POCSHA'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
     RuntimeStack: 'JAVA|11-java11'
+- task: AzureRmWebAppDeployment@4
