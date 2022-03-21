@@ -23,6 +23,6 @@ steps:
     azureSubscription: 'DevOps - Demo 1 (be73b182-eb0f-4790-86c3-a48463f8930d)'
     appType: 'webAppLinux'
     WebAppName: 'POCSHA'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: $(Pipeline.Workspace)/**/*.zip'
     RuntimeStack: 'JAVA|11-java11'
 - task: PublishBuildArtifacts@1
